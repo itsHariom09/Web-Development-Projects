@@ -1,0 +1,108 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #121212, #1e1e2f);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #f0b65e;
+}
+
+/* Main Card Container */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #f8ad3d;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive Image */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #f0b65e;
+  display: none; /* hidden until image loads */
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  background-color: #f0b65e;
+  color: #000;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ffad32;
+  transform: scale(1.02);
+}
+
+#downloadBtn {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  background-color: #4af087;
+  color: black;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+#downloadBtn:hover {
+  background-color: #34d76d;
+}
+
+#msg {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ccc;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#pokemonInput {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #f0b65e;
+  background-color: #1e1e2f;
+  color: white;
+  outline: none;
+}
